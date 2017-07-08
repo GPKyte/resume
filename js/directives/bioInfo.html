@@ -1,0 +1,10 @@
+<img ng-src="{{info.pictureURL}}" class='biopic'>
+<h1 id='name'>{{info.name}}</h1>
+<hr>
+<ul id="topContacts" class='flex-box'>
+    <li class='flex-item'><span class='orange-text'>location:</span><span class='blue-text'>{{info.contactInfo.location}}</span></li>
+    <li class='flex-item'><span class='orange-text'>email:</span><span class='blue-text'>{{info.contactInfo.email}}</span></li>
+    <li class='flex-item'><span class='orange-text'>mobile:</span><span class='blue-text'>{{info.contactInfo.mobile}}</span></li>
+    <li class='flex-item'><span class='orange-text'>github:</span><a ng-href="{{info.contactInfo.githubLink}}" style='display: inline'><span class='blue-text'>{{info.contactInfo.gitHub}}</span></a></li>
+</ul>
+<span class="role">{{info.role}}</span>
