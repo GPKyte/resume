@@ -6,10 +6,6 @@
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <!--include AngularJS libriary-->
   <script src="js/shared/angular.min.js"></script>
-<!--
-  Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
-  -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -29,11 +25,14 @@
 
     <div id="projects">
       <h2>Projects</h2>
+      <div class='project-entry gray' ng-repeat="project in project.projects">
+        <project info="project"></project>
+      </div>
     </div>
 
     <div id="education" class="gray">
       <h2>Education</h2>
-      <div class='education-entry gray' ng-repeat="university in education.universities">
+      <div class="education-entry gray" ng-repeat="university in education.universities">
         <education info="university"></education>
       </div>
 
@@ -60,6 +59,7 @@
   <script src="js/directives/bioInfo.js"></script>
   <script src="js/directives/onlineCourse.js"></script>
   <script src="js/directives/education.js"></script>
+  <script src="js/directives/project.js"></script>
 
 </body>
 </html>
